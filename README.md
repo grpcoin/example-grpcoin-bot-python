@@ -2,13 +2,6 @@
 
 An example grpcoin bot written in Python for demonstration purposes. 
 
-
-
-
-
-
-
-
 ## How to run
 
 ### Setting access token
