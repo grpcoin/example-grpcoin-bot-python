@@ -1,29 +1,51 @@
-# example-grpcoin-bot-python
+# Example Grpcoin Python Bot
 
-An example grpcoin bot written in Python. 
+An example grpcoin bot written in Python for demonstration purposes. 
 
-# Dependencies
 
-I advise you to create a virtualenv not to mess with your global python environment.
-Then, install the requirements. 
+
+
+
+
+
+
+## How to run
+
+### Setting access token
+Before running the bot, make sure you have a GitHub account.
+
+Then, [create a GitHub personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token) 
+that does not have any permissions!
+
+Set your GitHub token to `TOKEN` environment variable.
 
 ```sh
+export TOKEN=...
+```
 
+### Installing dependencies
+
+Note that it is strongly recommended to create a `virtualenv` before installing
+requirements not to affect global Python modules. You can refer 
+[here](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv)
+to set a virtual environment. 
+
+Execute the following pip command on a shell to install dependencies: 
+
+```sh
 pip install -r requirements.txt
 ```
 
-# Development
-
-First, you must generate proto files.
+Generate Python codes for proto files:
 
 ```sh
-
-python3 -m grpc_tools.protoc -I ./protos --python_out=. --grpc_python_out=. ./protos/grpcoin.proto
+python -m grpc_tools.protoc -I ./protos --python_out=. --grpc_python_out=. ./protos/grpcoin.proto
 ```
 
-To run, 
+### Running bot
 
-```py
+Run the following command to start the bot: 
 
-python3 main.py
+```sh
+python main.py
 ```
