@@ -9,8 +9,8 @@ from enum import Enum
 from datetime import datetime
 from google.protobuf.timestamp_pb2 import Timestamp
 
-from grpcoin_pb2 import *
-from grpcoin_pb2_grpc import *
+from .generated.grpcoin_pb2 import *
+from .generated.grpcoin_pb2_grpc import *
 
 PROD = 'api.grpco.in:443'
 LOCAL = 'localhost:8080'
@@ -44,7 +44,7 @@ def main():
     # Retrive the access token
     token = os.environ['TOKEN']
     if not token:
-        print('''Create a permissionless Personal Access Token on GitHub 
+        print('''Create a permissionless Personal Access Token on GitHub
                 https://github.com/settings/tokens and set it to TOKEN environment variable''')
         sys.exit(1)
 
