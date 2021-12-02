@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import grpcoin_pb2 as grpcoin__pb2
+from . import grpcoin_pb2 as grpcoin__pb2
 
 
 class TickerInfoStub(object):

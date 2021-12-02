@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "grpcoin"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+grpcio = "^1.42.0"
+protobuf = "^3.19.1"
+tabulate = "^0.8.9"
+
+[tool.poetry.dev-dependencies]
+grpcio-tools = "^1.42.0"
+mypy-protobuf = "^3.0.0"
+grpc-stubs = "^1.24.7"
+mypy = "^0.910"
+types-tabulate = "^0.8.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
