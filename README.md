@@ -33,6 +33,7 @@ Generate Python codes for proto files:
 
 ```sh
 make generate-protos
+make path_fix
 ```
 
 ### Running bot
