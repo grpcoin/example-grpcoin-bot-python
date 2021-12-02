@@ -1,2 +1,5 @@
 .python-version
 poetry.lock
+
+__pycache__/
+.vscode/
