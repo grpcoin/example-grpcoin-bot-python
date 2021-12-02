@@ -10,3 +10,6 @@ generate-protos:
 
 path_fix:
 	@sed -i -E 's/^import.*_pb2/from . \0/' ./grpcoin/generated/*.py
+
+run_grpcoin:
+	poetry run python -m grpcoin
